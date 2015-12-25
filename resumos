@@ -1,0 +1,31 @@
+SIGINT Interrupt from keyboard
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+unlink - deletes a name from the file system. If the name referred to a socket, fifo or device the name for it is removed but processes which have the object open may continue to use it. 
+
+----------------------------------------------------------------------
+dup - system calls create a copy of the file descriptor oldfd.
+
+--------------------------------------------------------------------------
+pipe - a unidirectional data channel that can be used for interprocess communication. 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+close - closes a file descriptor, so that it no longer refers to any file and may be reused.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Open - Creates a new open file description, an entry in the system-wide table of open files. Access modes: O_RDONLY, O_WRONLY, or O_RDWR. These request opening the file read-only, write-only, or read/write, respectively. 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Sprintf - Escreve para um ficheiro. Write to the character string str.
+
+------------------------------------------------------------------------------------------------------------------------
+mkfifo - makes a FIFO special file with name pathname. 
+A FIFO special file is similar to a pipe, except that it is created in a different way. Instead of being an anonymous communications channel, a FIFO special file is entered into the file system by calling mkfifo().
+
+Once you have created a FIFO special file in this way, any process can open it for reading or writing, in the same way as an ordinary file. However, it has to be open at both ends simultaneously before you can proceed to do any input or output operations on it. Opening a FIFO for reading normally blocks until some other process opens the same FIFO for writing, and vice versa. See fifo(7) for nonblocking handling of FIFO special files. 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Write - function shall attempt to write nbyte bytes from the buffer pointed to by buf to the file associated with the open file descriptor, fildes.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
